@@ -34,8 +34,12 @@ ul {
     padding: 10px;
     gap: 30px;
 }
+li {
+    transition: 0.3s;
+}
 li:hover {
     color: #9ec2c7;
     cursor: pointer;
-    transition: 0.2s;
+    transition:  0.4s;
+    font-size: 23px;
 }
