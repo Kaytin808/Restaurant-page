@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Aleo
+Author: Alessio Laiso
+Url: http://www.fontsquirrel.com/fonts/aleo
+
+Font: Dancing Script OT
+Author: Impallari Type
+Url: http://www.fontsquirrel.com/fonts/dancing-script-ot

@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    height: 100px;
+}
+html {
+    background: url("/src/Images/hawaii\ bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container-title {
+    /* background-color: #c0e0e4; */
+    border-radius: 25px;
+    width: 400px;
+    text-align: center;
+}
+@font-face {
+    font-family: titleFont;
+    src: url(/src/Fonts/Fall\ in\ love.ttf);
+}
