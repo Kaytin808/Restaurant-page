@@ -1,7 +1,17 @@
-.main {
-    height: 35em;
+.hours-ul {
+    list-style-type: none;
+}
+.main-container {
+    height: 48em;
+}
+.hours-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 7em;
     position: absolute;
-    left: 49em;
-    bottom: 0em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 55em;
+}
+.hours {
+    margin: 0 0 10px 0;
 }
