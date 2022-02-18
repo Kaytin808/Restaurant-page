@@ -11,7 +11,41 @@
     bottom: 7em;
     position: absolute;
     left: 55em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .hours {
     margin: 0 0 10px 0;
+}
+.time {
+    position: absolute;
+    left: 822px;
+    top: 748px;
+}
+.quote1 {
+    font-family: sans;
+    position: absolute;
+    left: 570px;
+    top: 18em;
+    font-style: italic;
+}
+.quote2 {
+    position: absolute;
+    font-family: sans;
+    font-style: italic;
+    left: 567px;
+    top: 32em;
+}
+.author1, .author2 {
+    font-family: sans;
+    font-style: italic;
+}
+.author1 {
+    position: absolute;
+    left: 1020px;
+    top: 22em;
+}
+.author2 {
+    position: absolute;
+    top: 37em;
+    left: 1019px;
 }
