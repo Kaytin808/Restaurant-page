@@ -5,7 +5,7 @@ import './styles/footer.css'
 import time from './Images/time.png'
 
 
-const myLogo = new Image();
+
 const myTime = new Image();
 const content = document.getElementById('content');
 var header = document.createElement('div');
@@ -53,11 +53,11 @@ hoursM_f.classList.add('hours')
 hoursSs.classList.add('hours')
 
 hoursM_f.innerHTML = 'Mon-Fri:7am-7pm';
-
-
 hoursSs.innerHTML = 'Sat-Sun:CLOSED'
 
-
+navBar3.addEventListener('click', () => {
+import { contact } from './contact'
+})
 
 
 
