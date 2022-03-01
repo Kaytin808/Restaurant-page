@@ -2,7 +2,13 @@
     list-style-type: none;
 }
 .main-container {
-    height: 48em;
+    height: 43em;
+    width: 1200px;
+    margin:50px auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
 }
 .hours-container {
     display: flex;
@@ -48,4 +54,46 @@
     position: absolute;
     top: 37em;
     left: 1019px;
+}
+.food {
+    height: 250px;
+    width: 250px;
+}
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title h4 {
+    text-transform: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+}
+.title h4 span {
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: -10px;
+}
+.title h4:before {
+    position: absolute;
+    content: '';
+    width: 190px;
+    height: 2px;
+    background-color: #ff7720;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-menu {
+    flex-basis: 580px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #919191;
 }

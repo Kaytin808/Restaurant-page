@@ -34,10 +34,10 @@ html {
     padding: 10px;
     gap: 30px;
 }
-.navbar {
+.navbar1, .navbar2, .navbar3 {
     transition: 0.3s;
 }
-.navbar:hover {
+.navbar1:hover, .navbar2:hover, .navbar3:hover {
     color: #9ec2c7;
     cursor: pointer;
     transition:  0.4s;
