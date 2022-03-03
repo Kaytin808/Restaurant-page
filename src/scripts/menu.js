@@ -1,24 +1,68 @@
+import home from '../main-home'
+
 export default function menu() {
     var menuTab = document.querySelector('.navbar2');
     var main = document.querySelector('.main-container')
-    var title = document.createElement('div')
-    title.classList.add('title')
-    var titleH4 = document.createElement('h4')
-    var menuSpan = document.createTextNode(' menu')
-    var titleSpan = document.createElement('span')
-    titleSpan.innerHTML = 'Onolicious food from hawaii'
-    var menu = document.createElement('div')
-    menu.classList.add('menu')
-    var singleMenu = document.createElement('div')
-    singleMenu.classList.add('single-menu')
-    var menuContent = document.createElement('div')
-    menuContent.classList.add('menu-content')
+    var homeTab = document.querySelector('.navbar1')
+
+    homeTab.addEventListener('click', () => {
+        home;
+    })
+
+    // Food Names //
     var garlicShrimp = document.createElement('h4')
-    garlicShrimp.innerHTML = 'Garlic shrimp'
+    var kalua = document.createElement('h4')
+    var mahi = document.createElement('h4')
+    var musubi = document.createElement('h4')
+    var katsu = document.createElement('h4')
+    var locomoco = document.createElement('h4')
+
+    // Food Prices //
+    var kaluaSpan = document.createElement('span')
     var garlicSpan = document.createElement('span')
-    garlicSpan.innerHTML = '$7.99'
-    var garlicP = document.createElement('p')
-    garlicP.innerHTML = 'The BEST Garlic Shrimp ever! It’s just like the famous <br>shrimp you buy at the food trucks in Hawaii. '
+    var mahiSpan = document.createElement('span')
+    var musubiSpan = document.createElement('span')
+    var katsuSpan = document.createElement('span')
+    var locoSpan = document.createElement('span')
+
+    // singe items container //
+    var itemShrimp = document.createElement('div')
+    var itemKalua = document.createElement('div')
+    var itemMahi = document.createElement('div')
+    var itemMusubi = document.createElement('div')
+    var itemKatsu = document.createElement('div')
+    var itemLoco = document.createElement('div')
+
+    // menu content container //
+    var menuContentShrimp = document.createElement('div')
+    var menuContentKalua = document.createElement('div')
+    var menuContentMahi = document.createElement('div')
+    var menuContentMusubi = document.createElement('div')
+    var menuContentKatsu = document.createElement('div')
+    var menuContentLoco = document.createElement('div')
+
+    // details about food here 'p' //
+    var detailShrimp = document.createElement('p')
+    var detailKalua = document.createElement('p')
+    var detailMahi = document.createElement('p')
+    var detailMusubi = document.createElement('p')
+    var detailKatsu = document.createElement('p')
+    var detailLoco = document.createElement('p')
+
+    // Class Names //
+    menuContentShrimp.classList.add('menu-content')
+    menuContentKalua.classList.add('menu-content')
+    menuContentMahi.classList.add('menu-content')
+    menuContentMusubi.classList.add('menu-content')
+    menuContentKatsu.classList.add('menu-content')
+    menuContentLoco.classList.add('menu-content')
+    itemLoco.classList.add('single-item')
+    itemKatsu.classList.add('single-item')
+    itemMusubi.classList.add('single-item')
+    itemShrimp.classList.add('single-item')
+    itemKalua.classList.add('single-item')
+    itemMahi.classList.add('single-item')
+
     // Images //
     var img1 = document.createElement('img')
     var img2 = document.createElement('img')
@@ -26,13 +70,15 @@ export default function menu() {
     var img4 = document.createElement('img')
     var img5 = document.createElement('img')
     var img6 = document.createElement('img')
-// image class //
+
+    // image class //
     img1.classList.add('food')
     img2.classList.add('food')
     img3.classList.add('food')
     img4.classList.add('food')
     img5.classList.add('food')
     img6.classList.add('food')
+
     // upon menu click  //
     menuTab.addEventListener('click',() => {
         
@@ -45,15 +91,78 @@ export default function menu() {
         main.innerHTML = '';
 
 
-        main.appendChild(title)
-        title.appendChild(titleH4)
-        titleH4.appendChild(titleSpan)
-        main.appendChild(menu)
-        menu.appendChild(singleMenu)
-        singleMenu.appendChild(img1)
-        singleMenu.appendChild(menuContent)
-        menuContent.appendChild(garlicShrimp)
+        // Text Content //
+
+        // Loco Moco //
+        locoSpan.textContent = '$10.99'
+        locomoco.textContent = 'Loco Moco w/ Mushroom Gravy'
+        detailLoco.textContent = 'Another local favorite! Hamburger patty poured with mushroom gravy on top! Choice of how you like your eggs as well!'
+        // Katsu //
+        katsuSpan.textContent = '$5.99'
+        katsu.textContent = 'Chicken Katsu With Rice'
+        detailKatsu.textContent = 'Japanese style fried chicken. Pork cutlets with choice of brown or white rice'
+        // Musubi //
+        musubiSpan.textContent = '$3.99'
+        musubi.textContent = 'Musubi'
+        detailMusubi.textContent = 'Local favorite! Spam topped with rice and shoyu sauce wrapped in nori!'
+        // Kalua //
+        kalua.textContent = 'Kalua Pork & Cabbage'
+        kaluaSpan.textContent = '$6.99'
+        detailKalua.textContent = 'Simple recipe by old folks in town. Smoked pork mixed in with some pork and choice of white or brown rice'
+        // Garlic Shrimp //
+        garlicShrimp.textContent = 'Garlic Shrimp'
+        garlicSpan.textContent = '$7.99'
+        detailShrimp.textContent = 'Made with lemon, pineapples on the side, and garlic'
+        // Mahi Mahi //
+        mahi.textContent = 'Grilled Mahi Mahi'
+        detailMahi.textContent = 'Lean white fish that hails from warm waters of hawaii and Gulf Mexico'
+        mahiSpan.textContent = '$6.99'
+
+        // Single Item classes //
+        main.appendChild(itemShrimp)
+        main.appendChild(itemKalua)
+        main.appendChild(itemMahi)
+        main.appendChild(itemMusubi)
+        main.appendChild(itemKatsu)
+        main.appendChild(itemLoco)
+
+        // Food Images //
+        itemShrimp.appendChild(img1)
+        itemKalua.appendChild(img2)
+        itemMahi.appendChild(img3)
+        itemMusubi.appendChild(img4)
+        itemKatsu.appendChild(img5)
+        itemLoco.appendChild(img6)
+
+        // Menu Content //
+        itemShrimp.appendChild(menuContentShrimp)
+        itemKalua.appendChild(menuContentKalua)
+        itemMahi.appendChild(menuContentMahi)
+        itemMusubi.appendChild(menuContentMusubi)
+        itemKatsu.appendChild(menuContentKatsu)
+        itemLoco.appendChild(menuContentLoco)
+        menuContentLoco.appendChild(locomoco)
+        menuContentLoco.appendChild(detailLoco)
+        menuContentKatsu.appendChild(katsu)
+        menuContentKatsu.appendChild(detailKatsu)
+        menuContentMusubi.appendChild(musubi)
+        menuContentMusubi.appendChild(detailMusubi)
+        menuContentMahi.appendChild(mahi)
+        menuContentMahi.appendChild(detailMahi)
+        menuContentKalua.appendChild(kalua)
+        menuContentKalua.appendChild(detailKalua)
+        menuContentShrimp.appendChild(garlicShrimp)
+        menuContentShrimp.appendChild(detailShrimp)
+
+        // Span Content //
+        katsu.appendChild(katsuSpan)
+        musubi.appendChild(musubiSpan)
+        mahi.appendChild(mahiSpan)
+        kalua.appendChild(kaluaSpan)
         garlicShrimp.appendChild(garlicSpan)
-        menuContent.appendChild(garlicP)
+        locomoco.appendChild(locoSpan)
+
+
+
     })
 }

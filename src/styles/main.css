@@ -2,9 +2,12 @@
     list-style-type: none;
 }
 .main-container {
+    display: grid;
     height: 43em;
     width: 1200px;
     margin:50px auto;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 166px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
@@ -55,9 +58,40 @@ body{
     top: 37em;
     left: 1019px;
 }
+.menu-content p {
+    text-align: center;
+}
 .food {
     height: 250px;
     width: 250px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    max-width: 250px;
+    transition: 0.5s;
+}
+.food:hover {
+    border-radius: 0;
+}
+.single-item h4 {
+    border-bottom: 1px dashed #333;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.food , h4 {
+    width: 287px;
+    text-align: center;
+}
+.single-item, .food h4 {
+    width: 16em;
+    padding-left: 6px;
+}
+.menu-content span {
+    font-style: italic;
+    color: rgb(198, 21, 21);
+    font-size: 18px;
+    position: relative;
+    left: 22px;
 }
 .title {
     text-align: center;
