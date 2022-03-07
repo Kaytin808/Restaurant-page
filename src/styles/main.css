@@ -160,3 +160,21 @@ body{
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 166px;
 }
+.contactContainer img {
+    border: 1px solid grey;
+}
+.gps {
+    border: 1px solid grey;
+}
+.detail-container  {
+    position: absolute;
+    right: 43em;
+    line-height: 4;
+  }
+.contactContainer img {
+    position: absolute;
+}
+.contactContainer {
+    display: none;
+    width: 76em;
+}
