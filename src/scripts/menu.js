@@ -1,13 +1,9 @@
-import home from '../main-home'
-
-export default function menu() {
     var menuTab = document.querySelector('.navbar2');
     var main = document.querySelector('.main-container')
+    var menuContainer = document.createElement('div')
+    menuContainer.classList.add('menu-container')
     var homeTab = document.querySelector('.navbar1')
 
-    homeTab.addEventListener('click', () => {
-        home;
-    })
 
     // Food Names //
     var garlicShrimp = document.createElement('h4')
@@ -80,7 +76,7 @@ export default function menu() {
     img6.classList.add('food')
 
     // upon menu click  //
-    menuTab.addEventListener('click',() => {
+
         
         img1.src = '/src/Images/garlic shrimp.jpg'
         img2.src = '/src/Images/kalua.jpg'
@@ -88,7 +84,7 @@ export default function menu() {
         img4.src ='/src/Images/musubi.jpg'
         img5.src = '/src/Images/katsu.jpg'
         img6.src ='/src/Images/locomoco.jpg'
-        main.innerHTML = '';
+        
 
 
         // Text Content //
@@ -118,13 +114,15 @@ export default function menu() {
         detailMahi.textContent = 'Lean white fish that hails from warm waters of hawaii and Gulf Mexico'
         mahiSpan.textContent = '$6.99'
 
+
+        main.appendChild(menuContainer)
         // Single Item classes //
-        main.appendChild(itemShrimp)
-        main.appendChild(itemKalua)
-        main.appendChild(itemMahi)
-        main.appendChild(itemMusubi)
-        main.appendChild(itemKatsu)
-        main.appendChild(itemLoco)
+        menuContainer.appendChild(itemShrimp)
+        menuContainer.appendChild(itemKalua)
+        menuContainer.appendChild(itemMahi)
+        menuContainer.appendChild(itemMusubi)
+        menuContainer.appendChild(itemKatsu)
+        menuContainer.appendChild(itemLoco)
 
         // Food Images //
         itemShrimp.appendChild(img1)
@@ -162,7 +160,3 @@ export default function menu() {
         garlicShrimp.appendChild(garlicSpan)
         locomoco.appendChild(locoSpan)
 
-
-
-    })
-}

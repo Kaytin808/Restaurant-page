@@ -1,7 +1,9 @@
-import time from '/home/kaytin/Documents/the-odin-project/Restaurant-page/src/Images/time.png'
+import time from '../Images/time.png'
 const myTime = new Image();
 const content = document.getElementById('content');
 var mainContainer = document.createElement('div')
+var homeContainer = document.createElement('div')
+homeContainer.classList.add('home-container')
 var hoursContainer = document.createElement('div')
 var hoursUl = document.createElement('ul')
 var hoursM_f = document.createElement('li')
@@ -31,12 +33,13 @@ hoursSs.classList.add('hours')
 hoursM_f.innerHTML = 'Mon-Fri:7am-7pm';
 hoursSs.innerHTML = 'Sat-Sun:CLOSED'
 content.appendChild(mainContainer)
-mainContainer.appendChild(quote1)
-mainContainer.appendChild(quote2)
-mainContainer.appendChild(author1)
-mainContainer.appendChild(author2)
-mainContainer.appendChild(hoursContainer)
-mainContainer.appendChild(myTime)
+mainContainer.appendChild(homeContainer)
+homeContainer.appendChild(quote1)
+homeContainer.appendChild(quote2)
+homeContainer.appendChild(author1)
+homeContainer.appendChild(author2)
+homeContainer.appendChild(hoursContainer)
+homeContainer.appendChild(myTime)
 hoursContainer.appendChild(hoursUl)
 hoursUl.appendChild(hoursM_f)
 

@@ -9,6 +9,9 @@
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 166px;
 }
+/* .main-container div {
+    display: none;
+} */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
@@ -130,4 +133,23 @@ body{
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom:1px solid #919191;
+}
+.home-container {
+    display: none;
+}
+.menu-container{
+    display: none;
+    height: 43em;
+    width: 1200px;
+    margin:50px auto;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 166px;
+}
+.main-container .selected {
+    display: grid;
+    height: 43em;
+    width: 1200px;
+    margin:50px auto;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 166px;
 }
