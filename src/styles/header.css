@@ -5,13 +5,6 @@
     color: rgb(0, 0, 0);
     height: 100px;
 }
-html {
-    background: url("/src/Images/hawaii\ bg.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 .container-title {
     /* background-color: #c0e0e4; */
     border-radius: 25px;
