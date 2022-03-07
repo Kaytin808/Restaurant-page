@@ -135,6 +135,9 @@ body{
     border-bottom:1px solid #919191;
 }
 .home-container {
+    display: grid;
+}
+.main-container .hide {
     display: none;
 }
 .menu-container{

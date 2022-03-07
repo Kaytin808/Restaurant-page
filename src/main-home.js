@@ -26,7 +26,7 @@ homeNav.addEventListener('click', () => {
 
 function menuTab() {
     menuContainer.classList = 'selected';
-    homeContainer.classList = 'home-container'
+    homeContainer.classList = 'hide'
 }
 menuNav.addEventListener('click', () => {
     menuTab()
