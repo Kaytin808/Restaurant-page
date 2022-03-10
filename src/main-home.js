@@ -47,4 +47,3 @@ contactNav.addEventListener('click' , () => {
 // Import styles
  header;
  mainSection;
- 

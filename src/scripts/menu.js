@@ -4,6 +4,14 @@ var menuContainer = document.createElement("div");
 menuContainer.classList.add("menu-container");
 var homeTab = document.querySelector(".navbar1");
 
+import kaluaFood from "../Images/kalua.jpg";
+import musubiFood from "../Images/musubi.jpg";
+import katsuFood from "../Images/katsu.jpg";
+import mahiFood from "../Images/mahi.jpg";
+import shrimpFood from "../Images/garlic shrimp.jpg";
+import locoFood from "../Images/locomoco.jpg";
+
+const newFood = new Image();
 // Food Names //
 var garlicShrimp = document.createElement("h4");
 var kalua = document.createElement("h4");
@@ -59,29 +67,40 @@ itemKalua.classList.add("single-item");
 itemMahi.classList.add("single-item");
 
 // Images //
-var img1 = document.createElement("img");
-var img2 = document.createElement("img");
-var img3 = document.createElement("img");
-var img4 = document.createElement("img");
-var img5 = document.createElement("img");
-var img6 = document.createElement("img");
+// var img1 = document.createElement("img");
+// var img2 = document.createElement("img");
+// var img3 = document.createElement("img");
+// var img4 = document.createElement("img");
+// var img5 = document.createElement("img");
+// var img6 = document.createElement("img");
 
 // image class //
-img1.classList.add("food");
-img2.classList.add("food");
-img3.classList.add("food");
-img4.classList.add("food");
-img5.classList.add("food");
-img6.classList.add("food");
+// img1.classList.add("food");
+// img2.classList.add("food");
+// img3.classList.add("food");
+// img4.classList.add("food");
+// img5.classList.add("food");
+// img6.classList.add("food");
 
 // upon menu click  //
-
-img1.src = "../src/Images/garlic shrimp.jpg";
-img2.src = "../src/Images/kalua.jpg";
-img3.src = "../src/Images/mahi.jpg";
-img4.src = "../src/Images/musubi.jpg";
-img5.src = "../src/Images/katsu.jpg";
-img6.src = "../src/Images/locomoco.jpg";
+const newKatsu = new Image();
+const newMusubi = new Image();
+const newShrimp = new Image();
+const newKalua = new Image();
+const newMahi = new Image();
+const newLoco = new Image();
+newKatsu.classList.add("food");
+newLoco.classList.add("food");
+newKalua.classList.add("food");
+newMahi.classList.add("food");
+newShrimp.classList.add("food");
+newMusubi.classList.add("food");
+newKatsu.src = katsuFood;
+newMusubi.src = musubiFood;
+newShrimp.src = shrimpFood;
+newKalua.src = kaluaFood;
+newMahi.src = mahiFood;
+newLoco.src = locoFood;
 
 // Text Content //
 
@@ -126,12 +145,12 @@ menuContainer.appendChild(itemKatsu);
 menuContainer.appendChild(itemLoco);
 
 // Food Images //
-itemShrimp.appendChild(img1);
-itemKalua.appendChild(img2);
-itemMahi.appendChild(img3);
-itemMusubi.appendChild(img4);
-itemKatsu.appendChild(img5);
-itemLoco.appendChild(img6);
+itemShrimp.appendChild(newShrimp);
+itemKalua.appendChild(newKalua);
+itemMahi.appendChild(newMahi);
+itemMusubi.appendChild(newMusubi);
+itemKatsu.appendChild(newKatsu);
+itemLoco.appendChild(newLoco);
 
 // Menu Content //
 itemShrimp.appendChild(menuContentShrimp);

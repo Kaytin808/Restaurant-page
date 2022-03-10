@@ -14,7 +14,6 @@ var author1 = document.createElement('div');
 var author2 = document.createElement('div')
 quote1.innerHTML = '"Love coming in with my family! We always enjoy the fresh food that they make <br>for us! I recommend trying out the kalua pork and cabbage!"'
 quote2.innerHTML = '"If you are looking for the best food on hawaii, this is it! I come by everytime after work<br> to \'let loose\' and eat the great food here!<br> The staff really treat you like family here! 10/10!! "'
-quote1.style.fontFamily = 'sans';
 author1.innerHTML = "—Faith M."
 author2.innerHTML = "—Kekoa A."
 author1.classList.add('author1')
