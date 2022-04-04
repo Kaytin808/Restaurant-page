@@ -10,4 +10,4 @@ This was also a great way to practice my DOM Manipulation since I haven't really
 - Finding a logical way to switch tabs using only JS
 - Using webpacks source maps to find my errors
 
-Live: https://app.netlify.com/sites/kaytin-restaurant/overview
+Live: https://kaytin-restaurant.netlify.app/
